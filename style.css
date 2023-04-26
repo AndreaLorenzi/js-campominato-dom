@@ -58,6 +58,7 @@ main {
 
 .clicked {
 	background-color: rgba(0, 255, 26, 0.869);
+    pointer-events: none;
 }
 
 p{

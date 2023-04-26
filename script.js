@@ -1,7 +1,9 @@
 
 const eleButton = document.querySelector("#btn-play");
 let score = 0
+const elePoint= document.querySelector('#score');
 const num = []
+
 
 
 
@@ -47,7 +49,7 @@ eleButton.addEventListener("click", function () {
                 this.classList.toggle('clicked');
                 score++;
                 console.log(score)
-                score.innerHTML= score
+                elePoint.innerHTML= score;
                 
             }
         }
