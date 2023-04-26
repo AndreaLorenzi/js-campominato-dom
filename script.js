@@ -2,6 +2,7 @@
 const eleButton = document.querySelector("#btn-play");
 let score = 0
 const elePoint= document.querySelector('#score');
+const eleText= document.querySelector('.text')
 const num = []
 
 
@@ -44,12 +45,14 @@ eleButton.addEventListener("click", function () {
                 console.log("hai cliccato la cella: " + this.innerHTML);
                 this.classList.toggle('bombs');
                 console.log('hai perso');
+                eleText.classList.add('text-lose')
             } else{
                 console.log("hai cliccato la cella: " + this.innerHTML);
                 this.classList.toggle('clicked');
                 score++;
                 console.log(score)
                 elePoint.innerHTML= score;
+
                 
             }
         }
