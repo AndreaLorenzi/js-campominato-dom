@@ -79,3 +79,12 @@ p{
     width: 420px;
     height: 420px;
 }
+
+.bombs{
+    background-color: red;
+}
+
+#score{
+    text-align: center;
+    font-size: 40px;
+}
